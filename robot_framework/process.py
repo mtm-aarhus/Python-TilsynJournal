@@ -272,7 +272,7 @@ def post_pez_comment(session, access_token, case_uuid, comment_text):
 # ─── Utilities ───────────────────────────────────────────────────────────────
 
 def extract_initials(email):
-    """'jadt@aarhus.dk' → 'JADT'"""
+    """'test@aarhus.dk' → 'TEST'"""
     if not email or "@" not in email:
         return "UKENDT"
     return email.split("@")[0].upper()

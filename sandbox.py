@@ -43,10 +43,10 @@ qe = make_queue_element_with_payload(
     payload={
         "id": "101510493",
         "type": "permission",
-        "inspector_email": "jadt@aarhus.dk",
-        "comment": "Test",
-        "selection": "Alt okay",
-        "inspected_at": "2026-04-14T14:08:08"
+        "inspector_email": "test@aarhus.dk",
+        "comment": "Fortov har taget skade fra kranbil",
+        "selection": "Skade på belægning",
+        "inspected_at": "2026-04-15T10:18:19"
     },
     queue_name="TilsynJournal",
     reference="Sandbox",
