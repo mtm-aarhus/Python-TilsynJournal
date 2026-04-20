@@ -82,8 +82,15 @@ def process_henstilling(orchestrator_connection, data):
         else:
             parts.append(f"Slutdato: {end_str}")
 
-    if faktura_status:
-        parts.append(f"Status: {faktura_status}")
+    forseelse = item.get("Forseelse", "")
+    if forseelse:
+        parts.append(f"Forseelse: {forseelse}")
+
+    # "Ny" is displayed as "Stadig opstillet" in the comment
+    faktura_status_display = "Stadig opstillet" if faktura_status == "Ny" else faktura_status
+    if faktura_status_display:
+        parts.append(f"Status: {faktura_status_display}")
+
     if comment:
         max_comment = 3500 - len(" | ".join(parts)) - len(" | Kommentar: ")
         if len(comment) > max_comment:
