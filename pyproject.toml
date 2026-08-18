@@ -20,7 +20,8 @@ dependencies = [
     "Pillow == 10.*",
     "fpdf2==2.8.7",
     "requests==2.33.1",
-    "azure-cosmos==4.15.0"
+    "azure-cosmos==4.15.0",
+    "pip_system_certs"
 ]
 
 [project.optional-dependencies]
