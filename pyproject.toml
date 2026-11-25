@@ -21,7 +21,8 @@ dependencies = [
     "fpdf2==2.8.7",
     "requests==2.33.1",
     "azure-cosmos==4.15.0",
-    "pip_system_certs"
+    "pip_system_certs",
+    "fonttools==4.68.0"
 ]
 
 [project.optional-dependencies]
